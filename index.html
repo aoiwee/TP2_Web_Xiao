@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/Xiao_Eating.png"
+      type="image/x-icon"
+    />
+    <title>Xiao!</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#inscription">Inscription</a></li>
+          <li><a href="#tableau">Tableau</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#video">Vidéo</a></li>
+          <li><a href="#pied_de_page">Pieds de la page</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="accueil">
+        <div id="position_accueil">
+          <div id="texte_accueil">
+            <h3>TP2-Automne 2024</h3>
+            <br />
+            <h1>Bienvenue dans notre communauté!</h1>
+            <br />
+            <h3>Auteure: Prinnie Ly</h3>
+            <br />
+            <h3>Techniques d'intégration multimédia</h3>
+            <br />
+            <h3>Collège de Maisonneuve</h3>
+            <br />
+            <h3><a href="https://aoiwee.github.io/TP2_Web_Xiao/">Lien de GitHub</a></h3>
+          </div>
+        </div>
+      </div>
+      <div id="inscription">
+        <img
+          src="images/Xiao_Hug.png"
+          alt="Xiao en train de tenir un toutou"
+        />
+        <div id="position_form">
+          <h2>Rejoignez notre fanclub de Xiao</h2>
+          <form action="traiter_form.php">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" /> <br />
+            <label for="nom">Adresse courriel:</label>
+            <input type="text" id="adresse" name="adresse" /> <br />
+            <br />
+
+            <p>Quel âge avez-vous?</p>
+            <input type="radio" id="age" name="age" value="moins18" />
+            <label for="age">Moins de 18 ans</label><br />
+            <input type="radio" id="age" name="age" value="19_25" />
+            <label for="age">19 - 25 ans</label><br />
+            <input type="radio" id="age" name="age" value="26_30" />
+            <label for="age">26 - 30 ans</label><br />
+            <input type="radio" id="age" name="age" value="31_40" />
+            <label for="age">31 - 40 ans</label><br />
+            <input type="radio" id="age" name="age" value="41_50" />
+            <label for="age">41 - 50 ans</label><br />
+            <input type="radio" id="age" name="age" value="plus51" />
+            <label for="age">Plus de 51 ans</label><br /><br />
+
+            <p>Quels sont vos éléments préférés sur Genshin Impact?</p>
+            <input type="checkbox" id="element" name="element" value="anemo" />
+            <label for="element">Anemo</label><br />
+            <input type="checkbox" id="element" name="element" value="geo" />
+            <label for="element">Geo</label><br />
+            <input type="checkbox" id="element" name="element" value="pyro" />
+            <label for="element">Pyro</label><br />
+            <input type="checkbox" id="element" name="element" value="hydro" />
+            <label for="element">Hydro</label><br />
+            <input type="checkbox" id="element" name="element" value="cryo" />
+            <label for="element">Cryo</label><br />
+            <input type="checkbox" id="element" name="element" value="electro" />
+            <label for="element">Electro</label><br />
+            <input type="checkbox" id="element" name="element" value="dendro" />
+            <label for="element">Dendro</label><br /><br />
+
+            <label for="genre">Quel est votre genre?</label>
+            <select id="genre" name="genre">
+              <option value="feminin">Féminin</option>
+              <option value="masculin">Masculin</option>
+              <option value="autre">Autre</option></select
+            ><br />
+
+            <label for="personnage">Quel est ton personnage préféré?</label>
+            <select name="personnage" id="personnage">
+              <option value="xiao">Xiao</option>
+              <option value="venti">Venti</option>
+              <option value="kazuha">Kazuha</option>
+              <option value="wanderer">Wanderer</option>
+              <option value="heizou">Heizou</option></select
+            ><br /><br />
+
+            <p>Pourquoi voulez-vous rejoindre notre communauté?</p>
+            <textarea name="raison" rows="5" cols="45"></textarea><br /><br />
+
+            <input type="submit" id="btn_submit" value="Soumettre" />
+          </form>
+        </div>
+      </div>
+
+      <div id="tableau">
+        <div id="position_tableau_titre">
+          <h2>Optimisation de Xiao</h2>
+          <div id="position_tableau">
+            <table>
+              <tr>
+                <th>Classement</th>
+                <th>Arme</th>
+                <th>Artéfact</th>
+                <th>Composition d'équipe</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Primordial Jade Winged-Spear</td>
+                <td>Vermillion Hereafter x4</td>
+                <td>Xiao + Xianyun + Faruzan + Furina</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Staff of Homa</td>
+                <td>Marechaussee Hunter x4</td>
+                <td>Xiao + Faruzan + Bennett + Zhongli</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Calamity Queller</td>
+                <td>Viridescent Venerer x2 Gladiator Gladiator's Finale x2</td>
+                <td>Xiao + Faruzan + Bennett + Furina</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Deathmatch</td>
+                <td>Viridescent Venerer x4</td>
+                <td>Xiao + Xianyun + Bennett + Furina</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Lithic Spear</td>
+                <td>Gladiator Gladiator's Finale x4</td>
+                <td>Xiao + Jean + Bennett + Zhongli</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="articles">
+        <h1>Apprends un peu plus sur Xiao!</h1>
+        <div id="position_articles1">
+          <div id="paragraphe1">
+            <h2>Son histoire tragique</h2>
+            <p>
+              Xiao est une adepte âgé de plus de 2000 ans. Autrefois, nommé
+              Alatus, prisonnier de guerre, il était controlé par son ancien
+              maître, qui lui forçait à tuer de nombreuses personnes, salissant
+              ainsi ses mains. Celui-ci a souffert pendant de nombreux millénaires
+              avant d'être sauvé par Morax, souverain et dieu de
+              l'élément Géo. Xiao, le nom donné par Morax, décida de
+              consacrer sa vie à servir Morax, car c'est lui qui l'a sauvé de
+              sa souffrance sans fin. Xiao est le dernier survivant des cinq
+              principaux Yakshas qui protégeaient la nation de Morax en tuant les
+              monstres démoniaques qui tentaient de détruire la paix de Liyue. Il se retrouve souvent seul, souffrant de la magie
+              démoniaque des monstres.
+            </p>
+          </div>
+          <img
+            src="images/Yakshas.png"
+            alt="une image des cinq Yakshas"
+          />
+        </div>
+        <div id="position_articles2">
+          <img
+            src="images/Xiao_Blue.png"
+            alt="une image de Xiao qui regarde le paysage"
+          />
+          <div id="paragraphe2">
+            <h2>Raisons pour lesquelles j'aime ce personnage</h2>
+            <p>
+              J'aime le personnage Xiao parce que, malgré son passé tragique et
+              après avoir perdu ses quatre compagnons les plus proches pendant
+              la guerre des Archontes, il essaie de faire de son mieux pour réapprendre
+              comment vivre, et non simplement exister comme il le faisait dans
+              le passé. Malgé son caractère réservé et toute la douleur et
+              souffrance qu'il porte, il est quelqu'un de doux et bienveillant qui ne veut
+              pas faire de mal aux gens autour de lui. De plus, il a un très
+              beau design, avec ses yeux dorés qui contrastent le sarcelle et le mauve
+              de sa tenue.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="galerie">
+        <h1>Galerie</h1>
+        <div id="position_galerie1">
+          <img
+            src="images/2021.png"
+            alt="l'art officiel de l'anniversaire de Xiao par Genshin en 2021"
+          />
+          <img
+            src="images/2020.png"
+            alt="l'art d'anniversaire officielle de Xiao par Genshin en 2020"
+          />
+          <img
+            src="images/2022.png"
+            alt="l'art d'anniversaire officielle de Xiao par Genshin en 2022"
+          />
+        </div>
+        <div id="position_galerie2">
+          <img
+            src="images/2023.png"
+            alt="l'art d'anniversaire officielle de Xiao par Genshin en 2023"
+          />
+          <img
+            src="images/2023 ella musk.png"
+            alt="l'art d'anniversaire officielle de Xiao par Ella Musk en 2023"
+          />
+          <img
+            src="images/2024.png"
+            alt="l'art d'anniversaire officielle de Xiao par Genshin en 2024"
+          />
+        </div>
+      </div>
+      <div id="video">
+        <video id="xiao_arriere_plan" autoplay loop muted>
+          <source
+            src="images/Genshin Impact - Xiao [Live Wallpaper].mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div id="video_conteneur">
+          <h1>Créations collectives des fans</h1>
+          <p>
+            Dans notre communauté, nous avons de nombreux fans qui créent des
+            édits, des fanarts, etc. Viens nous rejoindre ou viens t'en nourrir!
+          </p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/cw1lF3a7M9A?si=hPiujmtUKThIELoe"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="pied_de_page">
+        <div id="pied_de_page1">
+          <p>6220 Sherbrooke Rue E, Montral QC H1N 1C1</p>
+          <a
+            href="https://act.hoyoverse.com/puzzle/hk4e/pz_DvjBejelna/index.html?lp=GI03&utm_source=NA_google_US_keywords_4.0newlp03&hoyotrace_channel=ga_channel&macro=1&ms=google&cid=19757870312&agid=149355404369&crid=673733556959&kwid=download%20genshin%20impact&nw=g&mt=b&dv=c&dvmd=&pl=&tgid=kwd-894284222873&gclid=CjwKCAiA0rW6BhAcEiwAQH28ImNPPYfL97BqRae9Vx4u90PrBeAcg03Ud02qBJcKyrTQitHKFhAKWhoCc0EQAvD_BwE&gad_source=1"
+            >Installe Genshin Impact!</a
+          >
+          <a href="https://genshin-impact.fandom.com/wiki/Xiao"
+            >Apprends-en plus sur Xiao!</a
+          >
+        </div>
+        <div id="pied_de_page2">
+          <div id="icons">
+            <ion-icon name="logo-twitch"></ion-icon>
+            <ion-icon name="logo-discord"></ion-icon>
+            <ion-icon name="logo-reddit"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+          </div>
+          <p>Avis de confidentialité | Privacy Notice</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
