@@ -22,10 +22,14 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </head>
+
   <body>
+    <!-- Le header contenant le menu -->
     <header>
       <nav>
+        <!-- Le menu contenant les différentes parties du site web, incluant le lien de GitHub -->
         <ul>
+          <!-- Les différentes parties du site web-->
           <li><a href="#accueil">Accueil</a></li>
           <li><a href="#inscription">Inscription</a></li>
           <li><a href="#tableau">Tableau</a></li>
@@ -33,14 +37,22 @@
           <li><a href="#galerie">Galerie</a></li>
           <li><a href="#video">Vidéo</a></li>
           <li><a href="#pied_de_page">Pieds de la page</a></li>
-          <li><a href="https://aoiwee.github.io/TP2_Web_Xiao/">Lien de GitHub</a></li>
+          <li>
+            <a href="https://aoiwee.github.io/TP2_Web_Xiao/">Lien de GitHub</a>
+          </li>
         </ul>
       </nav>
     </header>
+
+    <!-- Le main contenant les éléments principaux de la page web -->
     <main>
+      <!-- La première section - Accueil -->
       <div id="accueil">
+        <!-- Une div pour positionner le texte d'accueil -->
         <div id="position_accueil">
+          <!-- Une div pour styliser le texte d'accueil -->
           <div id="texte_accueil">
+            <!-- Le texte d'accueil -->
             <h3>TP2-Automne 2024</h3>
             <br />
             <h1>Bienvenue dans notre communauté!</h1>
@@ -53,21 +65,29 @@
           </div>
         </div>
       </div>
+
+      <!-- La deuxième section - Inscription -->
       <div id="inscription">
-        <img
-          src="images/Xiao_Hug.png"
-          alt="Xiao en train de tenir un toutou"
-        />
+        <!-- Une image de Xiao qui tient un toutou -->
+        <img src="images/Xiao_Hug.png" alt="Xiao en train de tenir un toutou" />
+        
+        <!-- Une div qui positionne le form -->
         <div id="position_form">
+          <!-- Le titre du form -->
           <h2>Rejoignez notre fanclub de Xiao</h2>
+          <!-- Le form -->
           <form action="traiter_form.php">
+            <!-- On demande le nom -->
             <label for="nom">Nom:</label>
             <input type="text" id="nom" name="nom" /> <br />
+            <!-- On demande l'adresse courriel -->
             <label for="nom">Adresse courriel:</label>
             <input type="text" id="adresse" name="adresse" /> <br />
             <br />
 
+            <!-- On demande l'âge -->
             <p>Quel âge avez-vous?</p>
+            <!-- Les différents choix de réponse qu'on peut cocher (1 choix) -->
             <input type="radio" id="age" name="age" value="moins18" />
             <label for="age">Moins de 18 ans</label><br />
             <input type="radio" id="age" name="age" value="19_25" />
@@ -81,7 +101,9 @@
             <input type="radio" id="age" name="age" value="plus51" />
             <label for="age">Plus de 51 ans</label><br /><br />
 
+            <!-- On demande les éléments préférés sur Genshin -->
             <p>Quels sont vos éléments préférés sur Genshin Impact?</p>
+            <!-- Les différents choix de réponse qu'on peut cocher (plusieurs choix) -->
             <input type="checkbox" id="element" name="element" value="anemo" />
             <label for="element">Anemo</label><br />
             <input type="checkbox" id="element" name="element" value="geo" />
@@ -92,19 +114,28 @@
             <label for="element">Hydro</label><br />
             <input type="checkbox" id="element" name="element" value="cryo" />
             <label for="element">Cryo</label><br />
-            <input type="checkbox" id="element" name="element" value="electro" />
+            <input
+              type="checkbox"
+              id="element"
+              name="element"
+              value="electro"
+            />
             <label for="element">Electro</label><br />
             <input type="checkbox" id="element" name="element" value="dendro" />
             <label for="element">Dendro</label><br /><br />
 
+            <!-- On demande le genre -->
             <label for="genre">Quel est votre genre?</label>
+            <!-- Un drop down avec trois choix (1 choix) -->
             <select id="genre" name="genre">
               <option value="feminin">Féminin</option>
               <option value="masculin">Masculin</option>
               <option value="autre">Autre</option></select
             ><br />
 
+            <!-- On demande le personnage préféré -->
             <label for="personnage">Quel est ton personnage préféré?</label>
+            <!-- Un drop down avec cinq choix (1 choix) -->
             <select name="personnage" id="personnage">
               <option value="xiao">Xiao</option>
               <option value="venti">Venti</option>
@@ -113,49 +144,63 @@
               <option value="heizou">Heizou</option></select
             ><br /><br />
 
+            <!-- On demande pourquoi la personne veut rejoindre la communauté -->
             <p>Pourquoi voulez-vous rejoindre notre communauté?</p>
+            <!-- On a une espace où la personne peut écrire -->
             <textarea name="raison" rows="5" cols="45"></textarea><br /><br />
 
+            <!-- Le button pour soumettre le form -->
             <input type="submit" id="btn_submit" value="Soumettre" />
           </form>
         </div>
       </div>
 
+      <!-- La troisième section - Tableau -->
       <div id="tableau">
+        <!-- Une div pour positionner le titre et le tableau -->
         <div id="position_tableau_titre">
+          <!-- Le titre du tableau -->
           <h2>Optimisation de Xiao</h2>
+          <!-- Une div pour positionner le tableau -->
           <div id="position_tableau">
+            <!-- Le tableau -->
             <table>
+              <!-- Première ligne du tableau -->
               <tr>
                 <th>Classement</th>
                 <th>Arme</th>
                 <th>Artéfact</th>
                 <th>Composition d'équipe</th>
               </tr>
+              <!-- Deuxième ligne du tableau -->
               <tr>
                 <td>1</td>
                 <td>Primordial Jade Winged-Spear</td>
                 <td>Vermillion Hereafter x4</td>
                 <td>Xiao + Xianyun + Faruzan + Furina</td>
               </tr>
+              <!-- Troisième ligne du tableau -->
               <tr>
                 <td>2</td>
                 <td>Staff of Homa</td>
                 <td>Marechaussee Hunter x4</td>
                 <td>Xiao + Faruzan + Bennett + Zhongli</td>
               </tr>
+              <!-- Quatrième ligne du tableau -->
               <tr>
                 <td>3</td>
                 <td>Calamity Queller</td>
                 <td>Viridescent Venerer x2 Gladiator Gladiator's Finale x2</td>
                 <td>Xiao + Faruzan + Bennett + Furina</td>
               </tr>
+              <!-- Cinquième ligne du tableau -->
               <tr>
                 <td>4</td>
                 <td>Deathmatch</td>
                 <td>Viridescent Venerer x4</td>
                 <td>Xiao + Xianyun + Bennett + Furina</td>
               </tr>
+              <!-- Sixième ligne du tableau -->
               <tr>
                 <td>5</td>
                 <td>Lithic Spear</td>
@@ -166,53 +211,68 @@
           </div>
         </div>
       </div>
+
+      <!-- La quatrième section - Articles -->
       <div id="articles">
+        <!-- Le titre -->
         <h1>Apprends un peu plus sur Xiao!</h1>
+        <!-- Une div pour positionner la première partie des articles -->
         <div id="position_articles1">
+          <!-- Une div pour styliser le premier paragraphe -->
           <div id="paragraphe1">
+            <!-- Le sous-titre -->
             <h2>Son histoire tragique</h2>
+            <!-- Le paragraphe -->
             <p>
               Xiao est une adepte âgé de plus de 2000 ans. Autrefois, nommé
               Alatus, prisonnier de guerre, il était controlé par son ancien
               maître, qui lui forçait à tuer de nombreuses personnes, salissant
-              ainsi ses mains. Celui-ci a souffert pendant de nombreux millénaires
-              avant d'être sauvé par Morax, souverain et dieu de
-              l'élément Géo. Xiao, le nom donné par Morax, décida de
-              consacrer sa vie à servir Morax, car c'est lui qui l'a sauvé de
-              sa souffrance sans fin. Xiao est le dernier survivant des cinq
-              principaux Yakshas qui protégeaient la nation de Morax en tuant les
-              monstres démoniaques qui tentaient de détruire la paix de Liyue. Il se retrouve souvent seul, souffrant de la magie
+              ainsi ses mains. Celui-ci a souffert pendant de nombreux
+              millénaires avant d'être sauvé par Morax, souverain et dieu de
+              l'élément Géo. Xiao, le nom donné par Morax, décida de consacrer
+              sa vie à servir Morax, car c'est lui qui l'a sauvé de sa
+              souffrance sans fin. Xiao est le dernier survivant des cinq
+              principaux Yakshas qui protégeaient la nation de Morax en tuant
+              les monstres démoniaques qui tentaient de détruire la paix de
+              Liyue. Il se retrouve souvent seul, souffrant de la magie
               démoniaque des monstres.
             </p>
           </div>
-          <img
-            src="images/Yakshas.png"
-            alt="une image des cinq Yakshas"
-          />
+          <!-- Une image des Yakshas -->
+          <img src="images/Yakshas.png" alt="une image des cinq Yakshas" />
         </div>
+        <!-- Une div pour positionner la deuxième partie des articles -->
         <div id="position_articles2">
+          <!-- Une image de Xiao qui regarde le paysage -->
           <img
             src="images/Xiao_Blue.png"
             alt="une image de Xiao qui regarde le paysage"
           />
+          <!-- Une div pour styliser le deuxième paragraphe -->
           <div id="paragraphe2">
+            <!-- Le sous-titre -->
             <h2>Raisons pour lesquelles j'aime ce personnage</h2>
+            <!-- Le paragraphe -->
             <p>
               J'aime le personnage Xiao parce que, malgré son passé tragique et
               après avoir perdu ses quatre compagnons les plus proches pendant
-              la guerre des Archontes, il essaie de faire de son mieux pour réapprendre
-              comment vivre, et non simplement exister comme il le faisait dans
-              le passé. Malgé son caractère réservé et toute la douleur et
-              souffrance qu'il porte, il est quelqu'un de doux et bienveillant qui ne veut
-              pas faire de mal aux gens autour de lui. De plus, il a un très
-              beau design, avec ses yeux dorés qui contrastent le sarcelle et le mauve
-              de sa tenue.
+              la guerre des Archontes, il essaie de faire de son mieux pour
+              réapprendre comment vivre, et non simplement exister comme il le
+              faisait dans le passé. Malgé son caractère réservé et toute la
+              douleur et souffrance qu'il porte, il est quelqu'un de doux et
+              bienveillant qui ne veut pas faire de mal aux gens autour de lui.
+              De plus, il a un très beau design, avec ses yeux dorés qui
+              contrastent le sarcelle et le mauve de sa tenue.
             </p>
           </div>
         </div>
       </div>
+
+      <!-- La cinquième section - Galerie -->
       <div id="galerie">
+        <!-- Le titre -->
         <h1>Galerie</h1>
+        <!-- Toutes les images de la galerie -->
         <div id="position_galerie1">
           <img
             src="images/2021.png"
@@ -242,19 +302,26 @@
           />
         </div>
       </div>
+
+      <!-- La sixième section - Video -->
       <div id="video">
+        <!-- L'arrière-plan de la section -->
         <video id="xiao_arriere_plan" autoplay loop muted>
           <source
             src="images/Genshin Impact - Xiao [Live Wallpaper].mp4"
             type="video/mp4"
           />
         </video>
+        <!-- Une div contenant une vidéo de YouTube avec un titre et un paragraphe qui l'accompagne -->
         <div id="video_conteneur">
+          <!-- Le titre -->
           <h1>Créations collectives des fans</h1>
+          <!-- Le texte -->
           <p>
             Dans notre communauté, nous avons de nombreux fans qui créent des
             édits, des fanarts, etc. Viens nous rejoindre ou viens t'en nourrir!
           </p>
+          <!-- La vidéo YouTube -->
           <iframe
             width="560"
             height="315"
@@ -268,10 +335,16 @@
         </div>
       </div>
     </main>
+    
+    <!-- Le footer contenant les éléments de fin de page -->
     <footer>
+      <!-- Une div pour le pied de la page -->
       <div id="pied_de_page">
+        <!-- La première partie du pied de la page -->
         <div id="pied_de_page1">
+          <!-- L'adresse de l'école -->
           <p>6220 Sherbrooke Rue E, Montral QC H1N 1C1</p>
+          <!-- Les liens importants -->
           <a
             href="https://act.hoyoverse.com/puzzle/hk4e/pz_DvjBejelna/index.html?lp=GI03&utm_source=NA_google_US_keywords_4.0newlp03&hoyotrace_channel=ga_channel&macro=1&ms=google&cid=19757870312&agid=149355404369&crid=673733556959&kwid=download%20genshin%20impact&nw=g&mt=b&dv=c&dvmd=&pl=&tgid=kwd-894284222873&gclid=CjwKCAiA0rW6BhAcEiwAQH28ImNPPYfL97BqRae9Vx4u90PrBeAcg03Ud02qBJcKyrTQitHKFhAKWhoCc0EQAvD_BwE&gad_source=1"
             >Installe Genshin Impact!</a
@@ -280,7 +353,9 @@
             >Apprends-en plus sur Xiao!</a
           >
         </div>
+        <!-- La deuxième partie du pied de la page -->
         <div id="pied_de_page2">
+          <!-- Les icônes -->
           <div id="icons">
             <ion-icon name="logo-twitch"></ion-icon>
             <ion-icon name="logo-discord"></ion-icon>
@@ -288,6 +363,7 @@
             <ion-icon name="logo-twitter"></ion-icon>
             <ion-icon name="logo-youtube"></ion-icon>
           </div>
+          <!-- Avis de confidentialité -->
           <p>Avis de confidentialité | Privacy Notice</p>
         </div>
       </div>
